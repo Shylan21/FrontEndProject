@@ -1,0 +1,47 @@
+SHOP!
+
+1. Creazione dei file HTML, Css & Js
+
+- HomePage 
+
+2. HTML 
+a. Titolo col nome 
+b. Lista per il filtering
+c. Menu a destra con carrello (funzionali?)
+d. Immagini con descrizione & prezzi
+e. Copyright
+f. GitHub repo link ?
+
+
+3. Css
+a. Modificare titolo 
+b. Display list horizontally + hover 
+c. Displaying pics in grid
+d. Hovering sulle immagini le fa apparire in rilievo
+e. Quando si scorre col mouse, la barra con nome e lista diventa opaca e rimane in rilievo.
+
+4. JavaScript
+a. Tutti gli elementi sono clickable
+b. Il nome è clickable e riporta al profilo Twitch
+c. Ogni oggetto in vendita porta ad una seconda pagina con la descrizione dell'oggetto. 
+
+- Pagina Secondaria
+
+1. HTML
+a. Nome 
+b. Immagine dell'oggetto cliccato
+c. Link per tornare indietro
+d. Nome dell'oggetto cliccato
+e. Prezzo
+f. Descrizione
+g. Bottoni per "Aggiungere al Carrello" o "Comprare Subito"
+
+2. Css
+a. Mouse che cambia passando sulla foto
+b. Posizionamento: Immagine a sinistra, descrizione e bottoni a destra
+c. Bottoni che cambiano colore on hover
+
+3. JavaScript
+a. Link indietro riporta alla HomePage
+b. Bottone 'Aggiungi al carrello' fa comparire un prompt chiedendo "se si vuole continuare lo shopping".
+c. Bottone "Compra Subito" alerta "Thanks for shopping with us" (da confermare)
