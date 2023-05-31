@@ -11,7 +11,7 @@ b1. Menu scorrevole a sinistra con socials ✅
 c. Menu a destra con carrello ✅ (funzionali?) 
 c1. Cambiare foto carrello con una col background trasparente ✅
 d. Immagini con descrizione & prezzi ✅
-e. Copyright ?
+e. Copyright ✅
 f. GitHub repo link ?
 
 
