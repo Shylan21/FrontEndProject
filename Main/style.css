@@ -7,6 +7,15 @@
   scroll-behavior: smooth;
 }
 
+html {
+  --nav-bar-color: rgba(172, 171, 169, 0.13);
+  --navbar-general-text-color: #000;
+  --side-menu-text: #fff;
+  --jacket-blue: #3956A3;
+  --jacket-green: #D7F95D;
+
+
+}
 
 body {
   font-family: fantasy;
@@ -20,7 +29,7 @@ body {
 /* HEADER */
 
 header {
-  background-color: rgba(172, 171, 169, 0.13);
+  background-color: var(--nav-bar-color);
 
   transition: all 275ms;
   text-align: center;
@@ -29,6 +38,9 @@ header {
   display: grid;
   grid-area: header;
 
+  position: fixed;
+  width: 100%;
+  backdrop-filter: blur(50px);
 }
 
 h1 {
@@ -58,7 +70,7 @@ h1 {
 }
 
 .header-menu {
-  color: #000;
+  color: var(--navbar-general-text-color);
   text-decoration: none;
   font-weight: 500;
   transition: .5s;
@@ -100,9 +112,9 @@ h1 {
   margin: 10px;
   background: linear-gradient(to bottom,
       #000, #000 20%,
-      #fff 20%, #fff 40%,
+      var(--nav-bar-color) 20%, var(--nav-bar-color) 40%,
       #000 40%, #000 60%,
-      #fff 60%, #fff 80%,
+      var(--nav-bar-color) 60%, var(--nav-bar-color) 80%,
       #000 80%, #000 100%);
 }
 
@@ -120,7 +132,7 @@ h1 {
 }
 
 #hamb-menu h3 {
-  color: #fff;
+  color: var(--side-menu-text);
   font-size: 2.2rem;
   margin-top: 30px;
 }
@@ -135,7 +147,7 @@ h1 {
 }
 
 #hamb-menu .side-menu {
-  color: #fff;
+  color: var(--side-menu-text);
   font-size: 1.3rem;
   text-decoration: none;
   transition: .5s;
@@ -143,7 +155,7 @@ h1 {
 
 #hamb-menu .side-menu:hover {
   background-color: #fff;
-  color: #000;
+  color: var(--navbar-general-text-color);
   text-decoration: underline;
 }
 
@@ -190,11 +202,13 @@ main {
   position: relative;
   top: -50px;
   display: inline-block;
+
 }
 
 .color-change-blue {
-  background-color: #3956A3;
+  background-color: var(--jacket-blue);
 }
+
 .color-change-green {
-  background-color: #D7F95D;
+  background-color: var(--jacket-green);
 }
