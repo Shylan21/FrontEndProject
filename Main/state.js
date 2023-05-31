@@ -16,6 +16,46 @@ const state = {
 			name: 'Wolf Jacket',
 			price: 38.25,
 		},
+		{
+			id: '003-Wolf-Hat',
+			name: 'Wolf Hat',
+			price: 23.0,
+		},
+		{
+			id: '004-Wolf-Hoodie',
+			name: 'Wolf Hoodie',
+			price: 30.0,
+		},
+		{
+			id: '005-Wolf-Man-T-Shirt',
+			name: 'Wolf Man T-Shirt',
+			price: 15.0,
+		},
+		{
+			id: '006-Wolf-Woman-White-T-Shirt',
+			name: 'Wolf Woman White T-Shirt',
+			price: 15.0,
+		},
+		{
+			id: '007-Wolf-Woman-Black-t-Shirt',
+			name: 'Wolf Hoodie',
+			price: 15.0,
+		},
+		{
+			id: '008-Wolf-Zipped-Hoodie',
+			name: 'Wolf Zipped Hoodie',
+			price: 36.0,
+		},
+		{
+			id: '009-Wolf-White-Jersey',
+			name: 'Wolf Jersey',
+			price: 20.5,
+		},
+		{
+			id: '010-Wolf-Bottle',
+			name: 'Wolf Hoodie',
+			price: 28.0,
+		},
 	],
 	cart: [],
 }

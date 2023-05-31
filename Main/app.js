@@ -1,5 +1,5 @@
 import { state } from './state.js'
-
+// Responsible for the home page
 function load() {
 	displayItems()
 }
@@ -11,8 +11,8 @@ function displayItems() {
 }
 
 function displayItem(item) {
-	const ul = document.querySelector('.items')
-	console.log(ul)
+  const ul = document.querySelector('.items')
+  
 	const li = document.createElement('li')
 	ul.append(li)
 
@@ -28,7 +28,7 @@ function displayItem(item) {
 	li.append(name)
 
 	const price = document.createElement('p')
-	price.innerText = item.price
+	price.innerText = '$' + item.price
 	li.append(price)
 
 	img.addEventListener('click', () => {
@@ -47,3 +47,4 @@ function goToItemPage(item) {
 }
 
 load()
+
