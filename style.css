@@ -61,12 +61,13 @@ h1 {
   color: #000;
   text-decoration: none;
   font-weight: 500;
+  transition: .5s;
 }
 
 .header-menu:hover {
   background-color: #000;
   color: #fff;
-
+  padding: 3px;
 }
 
 
@@ -137,10 +138,16 @@ h1 {
   color: #fff;
   font-size: 1.3rem;
   text-decoration: none;
-
+  transition: .5s;
 }
 
-#hamb-input:checked+#hamb-menu #sidebar-menu {
+#hamb-menu .side-menu:hover {
+background-color: #fff;
+color: #000;
+text-decoration: underline;
+}
+
+#hamb-input:checked + #hamb-menu #sidebar-menu {
   visibility: visible;
   left: 0;
 }
