@@ -10,7 +10,7 @@ b. Lista per il filtering ✅
 b1. Menu scorrevole a sinistra con socials ✅
 c. Menu a destra con carrello ✅ (funzionali?) 
 c1. Cambiare foto carrello con una col background trasparente ✅
-d. Immagini con descrizione & prezzi
+d. Immagini con descrizione & prezzi ✅
 e. Copyright ?
 f. GitHub repo link ?
 
@@ -18,7 +18,7 @@ f. GitHub repo link ?
 3. Css
 a. Modificare titolo ✅
 b. Display list horizontally + hover ✅
-c. Displaying pics in grid
+c. Displaying pics in grid ✅
 d. Hovering sulle immagini le fa apparire in rilievo
 e. Quando si scorre col mouse, la barra con nome e lista diventa opaca e rimane in rilievo.
 
