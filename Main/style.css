@@ -19,8 +19,9 @@ body {
   font-family: fantasy;
   display: grid;
   grid-template:
-    "header header header" 200px
-    "main main main " 1fr /
+    "header header header" 150px
+    "main main main " 1fr
+    "footer footer ." 100px/
     1fr;
 }
 
@@ -53,7 +54,7 @@ h1 {
 }
 
 .header-icons {
-  margin: 10px 5px 0 5px ;
+  margin: 10px 5px 0 5px;
 }
 
 .header-list {
@@ -210,4 +211,28 @@ main {
 
 .color-change-green {
   background-color: var(--jacket-green);
+}
+
+
+/* FOOTER */
+
+footer {
+  grid-area: footer;
+
+}
+
+footer>a>img {
+  display: block;
+  margin: 30px auto;
+  border: 1px solid #000;
+  border-radius: 6px;
+  padding: 5px;
+  width: 100px;
+  height: 60px;
+}
+
+#terms {
+  font-size: 10px;
+  text-align: center;
+  padding-bottom: 60px;
 }
