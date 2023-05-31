@@ -30,17 +30,18 @@ body {
 header {
   background-color: var(--nav-bar-color);
 
-  transition: all 275ms;
-  text-align: center;
-  padding-top: 30px;
-
   display: grid;
   grid-area: header;
 
   position: fixed;
-  width: 100%;
-  backdrop-filter: blur(50px);
   z-index: 1;
+
+  transition: all 275ms;
+  backdrop-filter: blur(50px);
+
+  text-align: center;
+  padding-top: 30px;
+  width: 100%;
 }
 
 h1 {
@@ -182,7 +183,6 @@ main {
   grid-area: main;
   display: grid;
   grid-template-columns: repeat(3, minmax(171px, 1fr));
-
   grid-gap: 20px;
 }
 
@@ -191,13 +191,6 @@ main {
   max-width: 350px;
   max-height: 350px;
   width: 100%;
-}
-
-.product-img:hover,
-.product-name:hover,
-.product-price:hover {
-  cursor: pointer;
-
 }
 
 .color-change-blue,
@@ -210,7 +203,6 @@ main {
   position: relative;
   top: -50px;
   display: inline-block;
-
 }
 
 .color-change-blue {
@@ -221,12 +213,27 @@ main {
   background-color: var(--jacket-green);
 }
 
+.product-img:hover,
+.product-name:hover,
+.product-price:hover,
+.color-change-blue:hover,
+.color-change-green:hover {
+  cursor: pointer;
+}
+
+
+.items {
+  list-style: none;
+}
 
 /* FOOTER */
 
 footer {
   grid-area: footer;
+}
 
+b {
+  text-decoration: underline;
 }
 
 footer>a>img {

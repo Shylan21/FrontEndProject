@@ -1,4 +1,3 @@
-SHOP!
 
 1. Creazione dei file HTML, Css & Js ✅
 
@@ -7,12 +6,13 @@ SHOP!
 2. HTML 
 a. Titolo col nome ✅
 b. Lista per il filtering ✅
-b1. Menu scorrevole a sinistra con socials ✅
-c. Menu a destra con carrello ✅ (funzionali?) 
+-b1. Menu scorrevole a sinistra con socials ✅
+-b2. Add links ✅
+c. Menu a destra con carrello ✅ (funzionali?)
 c1. Cambiare foto carrello con una col background trasparente ✅
 d. Immagini con descrizione & prezzi ✅
 e. Copyright ✅
-f. GitHub repo link ?
+
 
 
 3. Css
@@ -20,12 +20,23 @@ a. Modificare titolo ✅
 b. Display list horizontally + hover ✅
 c. Displaying pics in grid ✅
 d. Hovering sulle immagini le fa apparire in rilievo ? 
-e. Quando si scorre col mouse, la barra con nome e lista diventa opaca e rimane in rilievo. ✅
+e. Change color with pic
+f. Quando si scorre col mouse, la barra con nome e lista diventa opaca e rimane in rilievo. ✅
+
+
+- PROBLEMS:
+a. P tag under jacket needs to move up
+b.
+
 
 4. JavaScript
-a. Tutti gli elementi sono clickable
+a. Tutti gli elementi sono clickable 
 
 c. Ogni oggetto in vendita porta ad una seconda pagina con la descrizione dell'oggetto. 
+
+
+
+
 
 - Pagina Secondaria
 
@@ -45,5 +56,5 @@ c. Bottoni che cambiano colore on hover
 
 3. JavaScript
 a. Link indietro riporta alla HomePage
-b. Bottone 'Aggiungi al carrello' fa comparire un prompt chiedendo "se si vuole continuare lo shopping".
+b. Bottone 'Aggiungi al carrello'.
 c. Bottone "Compra Subito" alerta "Thanks for shopping with us" (da confermare)
