@@ -142,12 +142,12 @@ h1 {
 }
 
 #hamb-menu .side-menu:hover {
-background-color: #fff;
-color: #000;
-text-decoration: underline;
+  background-color: #fff;
+  color: #000;
+  text-decoration: underline;
 }
 
-#hamb-input:checked + #hamb-menu #sidebar-menu {
+#hamb-input:checked+#hamb-menu #sidebar-menu {
   visibility: visible;
   left: 0;
 }
@@ -162,6 +162,16 @@ text-decoration: underline;
 
 /* MAIN */
 
+.product-img {
+  display: inline;
+  object-fit: cover;
+width: 100%;
+}
+
 main {
   grid-area: main;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(171px, 1fr));
+  text-align: center;
+grid-gap: 10px;
 }
