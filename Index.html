@@ -15,21 +15,29 @@
 
     <h1>Wolframe96</h1>
     <span class="header-icon-group container">
-      <div>
-        <span class="menu-list"></span>
-        <span class="menu-list"></span>
-        <span class="menu-list"></span>
-      </div>
+      <input type="checkbox" id="hamb-input">
+      <label id="hamb-menu" for="hamb-input">
+        <nav id="sidebar-menu">
+          <h3>Menu</h3>
+          <ul>
+            <li><a class="side-menu" href="#">Home</a></li>
+            <li><a class="side-menu" href="#">About</a></li>
+            <li><a class="side-menu" href="#">Contact</a></li>
+            <li><a class="side-menu" href="#">Twitch</a></li>
+          </ul>
 
+        </nav>
+      </label>
+      <div class="overlay"></div>
 
       <img class="header-icons" src="img/Cart1.png" alt="Cart image" width="35px" />
     </span>
 
-    <ul>
-      <li><a href="#">All </a></li>
-      <li><a href="#">Clothing </a></li>
-      <li><a href="#">Home & Living</a></li>
-      <li><a href="#">Headware</a></li>
+    <ul class="header-list">
+      <li><a class="header-menu" href="#">All </a></li>
+      <li><a class="header-menu" href="#">Clothing </a></li>
+      <li><a class="header-menu" href="#">Home & Living</a></li>
+      <li><a class="header-menu" href="#">Headware</a></li>
     </ul>
 
   </header>
