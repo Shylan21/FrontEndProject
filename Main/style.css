@@ -193,6 +193,13 @@ main {
   width: 100%;
 }
 
+.product-img:hover,
+.product-name:hover,
+.product-price:hover {
+  cursor: pointer;
+
+}
+
 .color-change-blue,
 .color-change-green {
   border: 2px #565555 solid;
