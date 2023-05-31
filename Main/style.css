@@ -31,7 +31,7 @@ header {
 
   transition: all 275ms;
   text-align: center;
-  padding-top: 50px;
+  padding-top: 30px;
 
   display: grid;
   grid-area: header;
@@ -53,8 +53,7 @@ h1 {
 }
 
 .header-icons {
-  margin-right: 5px;
-  justify-content: right;
+  margin: 10px 5px 0 5px ;
 }
 
 .header-list {
