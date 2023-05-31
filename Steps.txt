@@ -1,20 +1,21 @@
 SHOP!
 
-1. Creazione dei file HTML, Css & Js
+1. Creazione dei file HTML, Css & Js ✅
 
 - HomePage 
 
 2. HTML 
-a. Titolo col nome 
-b. Lista per il filtering
-c. Menu a destra con carrello (funzionali?)
+a. Titolo col nome ✅
+b. Lista per il filtering ✅
+c. Menu a destra con carrello ✅ (funzionali?) 
+c1. Cambiare foto carrello con una col background trasparente
 d. Immagini con descrizione & prezzi
 e. Copyright
 f. GitHub repo link ?
 
 
 3. Css
-a. Modificare titolo 
+a. Modificare titolo ✅
 b. Display list horizontally + hover 
 c. Displaying pics in grid
 d. Hovering sulle immagini le fa apparire in rilievo

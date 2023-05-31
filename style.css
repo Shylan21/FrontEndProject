@@ -1,0 +1,78 @@
+/* GENERAL STYLE */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+
+body {
+  font-family: fantasy;
+  display: grid;
+  grid-template:
+    "header header header" 200px
+    "main main main " 1fr /
+    1fr;
+}
+
+/* HEADER */
+
+header {
+  background-color: rgba(172, 171, 169, 0.13);
+
+  transition: all 275ms;
+  text-align: center;
+  padding-top: 50px;
+
+  display: grid;
+  grid-area: header;
+
+}
+
+h1 {
+  font-size: 35px;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 50px 50px;
+  gap: 10px;
+  justify-content: right;
+}
+
+.header-icons {
+  margin-right: 5px;
+  justify-content: right;
+}
+
+
+ul {
+  list-style: none;
+  padding-top: 30px;
+  padding-bottom: 10px;
+
+  display: grid;
+  grid-template-columns: repeat(4, auto);
+  grid-gap: 20px;
+}
+
+a {
+  color: #000;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+a:hover {
+  background-color: #000;
+  color: #fff;
+
+}
+
+
+/* MAIN */
+
+main {
+  grid-area: main;
+}
