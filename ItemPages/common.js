@@ -35,13 +35,11 @@ function displayProduct(item) {
 	div.append(h1)
 
 	const img = addImage(item)
-	console.log('item-id', item)
 	img.className = 'product-img'
 	div.append(img)
 
 	const prodName = document.createElement('h2')
 	prodName.innerText = item.name
-	console.log('name', item.name)
 	prodName.className = 'product-name'
 	div.append(prodName)
 
@@ -55,19 +53,24 @@ function displayProduct(item) {
 	price.innerText = '$' + item.price
 	div.append(price)
 
+
+  const description = displayProductDescription(item)
+  description.className = 'description'
+  div.append(description)
+
 	// i.e. displayProductDescription()
 }
 
 function addImage(item) {
 	const image = document.createElement('img')
 	image.src = `../img/Prodotti/${item.id}.png`
-	console.log('image', item.id)
 	return image
 }
 
-// function displayProductDescription(item) {
-// 	const p = document.createElement('p')
-// 	p.innerText = `../Main/state.js`
-// }
+function displayProductDescription(item) {
+	const p = document.createElement('p')
+	p.innerText = item.description
+	return p
+}
 
 load()
