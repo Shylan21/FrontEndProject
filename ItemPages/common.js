@@ -20,6 +20,8 @@ function load() {
 	const item = getItem()
 	displayProduct(item)
 	displayProductDescription(item)
+	displayProductFeatures(item)
+	displayFooter()
 	// After this I can call any function I want to use to use here.
 	// Item will be the -item- I clicked on from the last page.
 }
@@ -27,7 +29,8 @@ function load() {
 function displayProduct(item) {
 	const body = document.querySelector('body')
 
-	const div = document.createElement('div')
+  const div = document.createElement('div')
+  div.className = 'container'
 	body.append(div)
 
 	const h1 = document.createElement('h1')
@@ -53,12 +56,47 @@ function displayProduct(item) {
 	price.innerText = '$' + item.price
 	div.append(price)
 
+	const description = displayProductDescription(item)
+	description.className = 'description'
+	div.append(description)
 
-  const description = displayProductDescription(item)
-  description.className = 'description'
-  div.append(description)
 
-	// i.e. displayProductDescription()
+	const feature = displayProductFeatures(item)
+	feature.className = 'feature'
+	div.append(feature)
+
+	const addToCart = document.createElement('button')
+	addToCart.className = 'add-to-cart'
+	addToCart.innerText = 'Add To Cart'
+	div.append(addToCart)
+
+	const buyNow = document.createElement('button')
+	buyNow.className = 'buy-now'
+	buyNow.innerText = 'Buy Now'
+  div.append(buyNow)
+  
+//   const cart = document.createElement('img')
+//   cart.src = '../img/cart.svg'
+// cart.className = 'cart-img'
+//   h1.append(cart)
+
+	const footer = document.createElement('footer')
+	footer.className = 'footer'
+	body.append(footer)
+
+	const link = document.createElement('a')
+	link.href = 'https://streamlabs.com/it-it/creator-sites'
+  footer.append(link)
+  
+	const logo = document.createElement('img')
+	logo.src = '/img/Streamlabs-Logo.png'
+  link.append(logo)
+  
+  const terms = document.createElement('p')
+  terms.className = 'terms'
+  terms.innerText = '© 2023 General Workings Inc. Interagendo con questa pagina accetti i nostri <b>Termini &\
+        condizioni and Cookie Policy.'
+  body.append(terms)
 }
 
 function addImage(item) {
@@ -68,9 +106,20 @@ function addImage(item) {
 }
 
 function displayProductDescription(item) {
-	const p = document.createElement('p')
-	p.innerText = item.description
-	return p
+	const description = document.createElement('p')
+	description.innerText = item.description
+	return description
 }
 
+function displayProductFeatures(item) {
+	const feature = document.createElement('p')
+	feature.innerText = item.feature
+	return feature
+}
+
+function displayFooter() {
+	const footer = document.createElement('footer')
+
+	return footer
+}
 load()

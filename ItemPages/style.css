@@ -9,11 +9,30 @@ body {
   font-family: fantasy;
 }
 
+.container {
+  display: grid;
+  grid-template-columns: 400px 1fr;
+  grid-template-rows: 100px 60px 50px 40px 1fr 100px;
+  grid-template-areas:
+    "h1 h1 h1"
+    ". product-name product-name"
+    ". priceText priceText"
+    ". priceTag priceTag"
+    "image description feature"
+   
+    "image button1 button2"
+  ;
+
+}
+
 h1 {
   font-size: 35px;
   font-family: fantasy;
   text-align: center;
-  margin-top: 60px;
+  margin-top: 50px;
+
+  grid-area: h1;
+
 
 }
 
@@ -21,30 +40,104 @@ h1 {
   max-width: 350px;
   max-height: 350px;
   width: 100%;
-  display: block;
-  margin: 50px auto;
+  grid-area: image;
+ 
 
 }
 
 .product-name {
+  display: block;
   font-size: 30px;
   margin-left: 40px;
-  display: block;
-}
-
-p {
-  margin-left: 45px;
+  margin-top: 10px;
+  grid-area: product-name;
+  
 }
 
 .price-text {
   margin-top: 10px;
+  margin-left: 40px;
+  grid-area: priceText;
+
 }
 
 .price-tag {
   font-size: 20px;
+  margin-top: 10px;
+  margin-left: 40px;
+  grid-area: priceTag;
+
 }
 
 .description {
-  margin-top: 20px;
-  margin-right: 20px
+  margin: 20px 20px 20px 40px;
+  padding-top: 30px;
+  grid-area: description;
+  text-align: center;
+  width: 350px;
+ 
+}
+
+.feature {
+  margin: 20px 20px 20px 40px;
+  padding-top: 30px;
+  grid-area: feature;
+
+}
+
+.add-to-cart,
+.buy-now {
+  /* display: block; */
+
+  margin: 0 20px;
+  padding: 15px 50px;
+
+  font-family: fantasy;
+
+  height: 60px;
+  font-size: 17px;
+
+  border-radius: 50px;
+  border: none;
+  box-shadow: 2px 2px 2px rgba(172, 171, 169);
+}
+
+.add-to-cart {
+  background-color: #C9CFD2;
+  grid-area: button1;
+  width: 240px;
+}
+
+.buy-now {
+  background-color: #8bddc8;
+  margin-bottom: 50px;
+  grid-area: button2;
+}
+
+.add-to-cart:hover,
+.buy-now:hover {
+  cursor: pointer;
+
+}
+
+.footer>a>img {
+  display: block;
+  margin: 30px auto;
+  border: 1px solid #000;
+  border-radius: 6px;
+  padding: 5px;
+  width: 100px;
+  height: 60px;
+}
+
+.terms {
+  font-size: 15px;
+  text-align: center;
+  padding-bottom: 60px;
+}
+
+.cart-img {
+  width: 30px;
+  position: absolute;
+
 }

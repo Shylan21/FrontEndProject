@@ -11,13 +11,14 @@ function displayItems() {
 }
 
 function displayItem(item) {
-	const ul = document.querySelector('.items')
+  const ul = document.querySelector('.items')
+
 
 	const li = document.createElement('li')
 	ul.append(li)
 
 	const div = document.createElement('div')
-	div.className = 'items'
+	div.className = 'item'
 	li.append(div)
 
 	const img = addImage(item.id)
