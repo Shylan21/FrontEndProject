@@ -181,6 +181,11 @@ main {
   margin-top: 100px;
 
   grid-area: main;
+
+}
+
+.items {
+  list-style: none;
   display: grid;
   grid-template-columns: repeat(3, minmax(171px, 1fr));
   grid-gap: 20px;
@@ -191,6 +196,7 @@ main {
   max-width: 350px;
   max-height: 350px;
   width: 100%;
+
 }
 
 .color-change-blue,
@@ -222,9 +228,7 @@ main {
 }
 
 
-.items {
-  list-style: none;
-}
+
 
 /* FOOTER */
 
