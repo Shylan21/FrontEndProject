@@ -97,6 +97,11 @@ function displayProduct(item) {
 	feature.className = 'feature'
 	div.append(feature)
 
+	const addToCart = document.createElement('button')
+	addToCart.className = 'add-to-cart'
+	addToCart.innerText = 'Add To Cart'
+	div.append(addToCart)
+
 	const buyNow = document.createElement('button')
 	buyNow.className = 'buy-now'
 	buyNow.innerText = 'Buy Now'
