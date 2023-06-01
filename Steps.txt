@@ -20,19 +20,17 @@ a. Modificare titolo ✅
 b. Display list horizontally + hover ✅
 c. Displaying pics in grid ✅
 d. Hovering sulle immagini le fa apparire in rilievo ? 
-e. Change color with pic
 f. Quando si scorre col mouse, la barra con nome e lista diventa opaca e rimane in rilievo. ✅
 
 
 - PROBLEMS:
-a. P tag under jacket needs to move up
+a. P tag under jacket needs to move up ✅
 b.
 
 
 4. JavaScript
 a. Tutti gli elementi sono clickable 
-
-c. Ogni oggetto in vendita porta ad una seconda pagina con la descrizione dell'oggetto. 
+b. Ogni oggetto in vendita porta ad una seconda pagina con la descrizione dell'oggetto. ✅
 
 
 

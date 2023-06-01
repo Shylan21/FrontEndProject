@@ -80,4 +80,4 @@ const state = {
 
 export { state }
 
-// Change names for the images
+
