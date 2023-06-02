@@ -12,10 +12,10 @@ body {
 .container {
   display: grid;
   grid-template-columns: 400px 1fr;
-  grid-template-rows: 100px 60px 50px 40px 1fr 100px 200px;
+  grid-template-rows: 100px 60px 50px 40px 1fr 100px 100px;
   grid-template-areas:
     "h1 h1 h1"
-    "image product-name product-name"
+    ". product-name product-name"
     "image priceText priceText"
     "image priceTag priceTag"
     "image description feature"
@@ -37,10 +37,11 @@ h1 {
 }
 
 .product-img {
-  max-width: 500px;
-  max-height: 500px;
+  max-width: 450px;
+  max-height: 450px;
   width: 100%;
   grid-area: image;
+  margin-left: 20px;
   /* background-color: #8bddac; */
 
 }
@@ -125,6 +126,19 @@ h1 {
 .buy-now:hover {
   cursor: pointer;
 
+}
+
+.counter { 
+  display: grid;
+  grid-area: counter;
+  
+  background-color: rgb(158, 7, 7);
+  color: #fff;
+  text-align: center;
+  width: 20px;
+  height: 20px;
+  border-radius: 50px;
+ 
 }
 
 .footer>a>img {
