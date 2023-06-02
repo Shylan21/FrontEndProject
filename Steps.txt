@@ -29,7 +29,7 @@ b.
 
 
 4. JavaScript
-a. Tutti gli elementi sono clickable 
+a. Tutti gli elementi sono clickable ✅
 b. Ogni oggetto in vendita porta ad una seconda pagina con la descrizione dell'oggetto. ✅
 
 
@@ -39,20 +39,20 @@ b. Ogni oggetto in vendita porta ad una seconda pagina con la descrizione dell'o
 - Pagina Secondaria
 
 1. HTML
-a. Nome 
-b. Immagine dell'oggetto cliccato
-c. Link per tornare indietro
-d. Nome dell'oggetto cliccato
-e. Prezzo
-f. Descrizione
-g. Bottoni per "Aggiungere al Carrello" o "Comprare Subito"
+a. Nome ✅
+b. Immagine dell'oggetto cliccato ✅
+c. Link per tornare indietro - Still to do -
+d. Nome dell'oggetto cliccato ✅
+e. Prezzo ✅
+f. Descrizione ✅
+g. Bottoni per "Aggiungere al Carrello" o "Comprare Subito"✅ 
 
 2. Css
-a. Mouse che cambia passando sulla foto
-b. Posizionamento: Immagine a sinistra, descrizione e bottoni a destra
+a. Mouse che cambia passando sulla foto 
+b. Posizionamento: Immagine a sinistra, descrizione e bottoni a destra ✅
 c. Bottoni che cambiano colore on hover
 
 3. JavaScript
-a. Link indietro riporta alla HomePage
-b. Bottone 'Aggiungi al carrello'.
-c. Bottone "Compra Subito" alerta "Thanks for shopping with us" (da confermare)
+a. Link indietro riporta alla HomePage 
+b. Bottone 'Aggiungi al carrello'. ✅
+c. Bottone "Compra Subito" alerta "Thanks for shopping with us" (da confermare) ✅

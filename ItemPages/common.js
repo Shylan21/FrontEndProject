@@ -55,10 +55,10 @@ function isItemInCart(itemName) {
 	}
 }
 const body = document.querySelector('body')
+const div = document.createElement('div')
 
 /* CONTAINER */
 function displayProduct(item) {
-	const div = document.createElement('div')
 	div.className = 'container'
 	body.append(div)
 
@@ -66,6 +66,11 @@ function displayProduct(item) {
 	const h1 = document.createElement('h1')
 	h1.innerText = 'Wolframe96'
 	div.append(h1)
+
+	const cartImg = document.createElement('img')
+	cartImg.src = '../img/cart.svg'
+	cartImg.className = 'cart-img'
+	div.append(cartImg)
 
 	/* IMG */
 	const img = addImage(item)
@@ -96,19 +101,15 @@ function displayProduct(item) {
 	div.append(description)
 
 	/* FEATURE */
-	// const feature = displayProductFeatures(item)
-	// feature.className = 'feature'
-	// div.append(feature)
 	const features = item.feature
 	console.log('ft', features)
 	const featureList = document.createElement('ul')
 	featureList.className = 'feature'
-  div.append(featureList)
-  
+	div.append(featureList)
+
 	features.forEach((item) => {
 		const feature = document.createElement('li')
 		feature.innerText = item
-
 		featureList.append(feature)
 	})
 
@@ -125,6 +126,9 @@ function displayProduct(item) {
 	const buyNow = document.createElement('button')
 	buyNow.className = 'buy-now'
 	buyNow.innerText = 'Buy Now'
+	buyNow.addEventListener('click', () => {
+		alert('Thanks for shopping with us! :D')
+	})
 	div.append(buyNow)
 
 	/* FOOTER */
@@ -148,13 +152,15 @@ function displayProduct(item) {
 	body.append(terms)
 }
 
+/* COUNTER */
 function addCounter(item) {
-	const counter = document.createElement('div')
+	const counter = document.createElement('span')
 	counter.id = item.name
 	counter.className = 'counter'
 	counter.innerText = '1'
-	body.append(counter)
+	div.append(counter)
 }
+
 function addImage(item) {
 	const image = document.createElement('img')
 	image.src = `../img/Prodotti/${item.id}.png`
